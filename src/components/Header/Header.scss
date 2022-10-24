@@ -1,0 +1,50 @@
+.TopBar{
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    
+    .left{
+
+        flex: 0.8;
+
+        justify-content: flex-end;
+
+
+        left: 0;
+
+        display: flex;
+
+        flex-direction: row;
+
+        .text {
+            display: flex;
+
+            flex-direction: column;
+
+            margin: auto;
+
+            h3{
+                margin: auto;
+                padding-left: 25px;
+                flex: 0.5;
+            }
+    
+            p {
+                flex: 0.5;
+                margin: auto;
+                padding-left: 25px;
+                font-size: medium;
+                width: 15vw;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.2;
+    }
+}
