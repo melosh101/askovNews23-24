@@ -1,4 +1,6 @@
 .TopBar{
+    background-color: white;
+    width: 100%;
     display: flex;
 
     flex-direction: row;
@@ -14,7 +16,7 @@
 
         justify-content: flex-end;
 
-        padding-left: 25px;
+        //padding-left: 25px;
 
         left: 0;
 
@@ -32,6 +34,7 @@
             flex-direction: column;
 
             margin: auto;
+            margin-left: 0;
 
             h3{
                 margin: auto;
@@ -45,12 +48,18 @@
                 margin: auto;
                 padding-left: 25px;
                 font-size: medium;
-                width: 5vw;
+                
             }
         }
     }
 
     .right{
         flex: 0.2;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    p{
+        margin-left: 0px !important;
     }
 }

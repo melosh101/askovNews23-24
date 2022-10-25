@@ -7,7 +7,7 @@ export default function Paedo() {
     <div className='Paedo'>
         <Header />
         <div className='article'>
-            <h1>Skandale på blå blok.</h1>
+            <h1>Står Danmarks demokraterne inde for Pædofili?</h1>
             <p>
             I interview med Danmarks demokraterne, kom Mika Hammer med et meget risky statement tidligt i valgkampen. “Jeg elsker børn.” var den udtagelse der rystede hele spisesalen mandag eftermiddag. <br /><br />
 

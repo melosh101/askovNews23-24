@@ -1,6 +1,6 @@
-.Paedo {
-    margin-top: 100px;
+.Kvindehaderne {
     display: flex;
+    margin-top: 100px;
     
     .article {
         top: 70px;
@@ -22,4 +22,12 @@
             font-size: x-large;
         }
     }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .article{
+        margin-top: 110px !important;
+        width: 100% !important;
+    }   
 }
