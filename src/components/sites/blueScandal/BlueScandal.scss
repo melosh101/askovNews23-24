@@ -1,7 +1,7 @@
 .BlueScandal {
     display: flex;
     margin-top: 100px;
-    
+
     .article {
         top: 70px;
         display: flex;
@@ -10,16 +10,23 @@
         width: 50%;
         justify-content: center;
         margin: auto;
-        
+
         padding-left: 10px;
         padding-right: 10px;
 
-        h1{
+        h1 {
             font-size: xx-large;
         }
 
-        p{
+        p {
             font-size: x-large;
         }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .article {
+        margin-top: 0px !important;
+        width: 100% !important;
     }
 }

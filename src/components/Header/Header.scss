@@ -1,5 +1,27 @@
-.TopBar{
-    background-color: white;
+.TopBar {
+    //background-color: white;
+
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    background: linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dac6d9",GradientType=1);
+
     width: 100%;
     display: flex;
 
@@ -9,9 +31,8 @@
 
     position: fixed;
     top: 0;
-    
-    .left{
 
+    .left {
         flex: 0.8;
 
         justify-content: flex-end;
@@ -36,30 +57,29 @@
             margin: auto;
             margin-left: 0;
 
-            h3{
+            h3 {
                 margin: auto;
                 padding-left: 25px;
                 flex: 0.5;
                 margin-left: 0;
             }
-    
+
             p {
                 flex: 0.5;
                 margin: auto;
                 padding-left: 25px;
                 font-size: medium;
-                
             }
         }
     }
 
-    .right{
+    .right {
         flex: 0.2;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    p{
+    p {
         margin-left: 0px !important;
     }
 }

@@ -16,27 +16,26 @@
         padding: 10px 10px 5px 10px;
         text-align: left;
 
-        .left{
-
+        .left {
             width: auto;
             overflow: visible;
-            strong{
+            strong {
                 font-size: 50px;
                 color: red;
                 text-align: left !important;
             }
-    
-            h1{
+
+            h1 {
                 margin: auto;
                 font-weight: bolder;
             }
 
-            .blue{
-                color:blue;
+            .blue {
+                color: blue;
             }
         }
 
-        .right{
+        .right {
             padding-left: 10px;
             img {
                 width: 15vw;
@@ -49,14 +48,17 @@
         cursor: pointer;
     }
 
-    .blueA{
-        background-color: lightblue ;
+    .blueA {
+        background-color: lightblue;
+    }
+
+    .blueA {
+        background-color: lightblue;
     }
 }
 
-
 @media only screen and (max-width: 500px) {
-    .Article{
+    .Article {
         width: 100% !important;
 
         img {
