@@ -5,7 +5,7 @@ export default function TopBar(){
     return (
         <div className="TopBar">
             <div className="left">
-                <img src="logo192.png" alt="" width={100} />
+                <img src="logo192.png" alt="" width={100} onClick={() => ClickEvent()} />
                 <div className="text">
                     <h3>ØX23</h3>
                     <p>Askov Efterskolevalg</p>
@@ -16,4 +16,8 @@ export default function TopBar(){
             </div>
         </div>
     )
+}
+
+function ClickEvent() {
+    window.location.href = './';
 }
