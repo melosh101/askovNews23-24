@@ -14,6 +14,7 @@
 
         justify-content: flex-end;
 
+        padding-left: 25px;
 
         left: 0;
 
@@ -32,6 +33,7 @@
                 margin: auto;
                 padding-left: 25px;
                 flex: 0.5;
+                margin-left: 0;
             }
     
             p {
@@ -39,7 +41,7 @@
                 margin: auto;
                 padding-left: 25px;
                 font-size: medium;
-                width: 15vw;
+                width: 5vw;
             }
         }
     }
