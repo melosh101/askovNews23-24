@@ -1,14 +1,13 @@
 import React from 'react'
-import './Soevn.scss'
-import Header from '../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function Soevn() {
-    return (
-        <div className="Soevn">
-            <Header />
-            <div className="article">
-                <h1>Keder de andre partier Enhedslisten?</h1>
-                <h2>Ordfører sover til lovgivnings møde.</h2>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="Keder de andre partier Enhedslisten?" />
+            <ArticleBox.UnderTitle undertitle="Ordfører sover til lovgivnings møde." />
+            <ArticleBox.Article article={(
                 <p>
                     Enhedslisten er faldet helt af pinden, eller måske er de
                     bare faldet i søvn. <br />
@@ -25,7 +24,8 @@ export default function Soevn() {
                     <br />
                     Det er i hvert i fald en spændende taktik.
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

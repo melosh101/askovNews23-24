@@ -1,13 +1,13 @@
 import React from 'react'
-import './Kvindehaderne.scss'
-import Header from './../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function Kvindehaderne() {
-    return (
-        <div className="Kvindehaderne">
-            <Header />
-            <div className="article">
-                <h1>Hader Det Konservative Folkeparti kvinder?</h1>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="Hadet Det Konservative Folkeparti kvinder?" />
+            {/* <ArticleBox.UnderTitle undertitle="undertitel" /> */}
+            <ArticleBox.Article article={(
                 <p>
                     Det gik ellers vildt til da der i mandags blev overtrådt
                     alle grænser. <br />
@@ -28,7 +28,8 @@ export default function Kvindehaderne() {
                     hvilken konsekvens vil det komme til at have på det
                     kvindehadende Konservative Folkeparti under denne valgkamp?
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

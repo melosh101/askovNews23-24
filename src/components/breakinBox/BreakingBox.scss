@@ -1,19 +1,15 @@
-.MainPage {
-    margin-top: 100px;
+.BreakingBox{
+    font-size: calc(10px + 2vmin);
+
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 
-    overflow-x: hidden; 
+    .Article {
+        border-radius: 25px;
+        margin-top: 10px;
 
-    font-size: calc(10px + 2vmin);
-
-
-    .pArticle {
-        margin: 10px;
-
-        background-color: yellow;
         width: fit-content;
 
         display: flex;
@@ -24,19 +20,16 @@
         .left {
             width: auto;
             overflow: visible;
+            
             strong {
                 font-size: 50px;
                 color: red;
-                text-align: left !important;
+                text-align: left;
             }
 
             h1 {
                 margin: auto;
                 font-weight: bolder;
-            }
-
-            .blue {
-                color: blue;
             }
         }
 
@@ -52,11 +45,14 @@
     .Article:hover {
         cursor: pointer;
     }
+
 }
 
+
 @media only screen and (max-width: 500px) {
-    BreakingBox {
-        width: 100% !important;
+    .Article {
+        width: 100vw !important;
+        border-radius: 0px !important;
 
         img {
             width: 35vw !important;

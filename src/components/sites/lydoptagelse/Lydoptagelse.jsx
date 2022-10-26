@@ -1,23 +1,23 @@
 import React from 'react'
-import './Lydoptagelse.scss'
-import Header from '../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 import ReactAudioPlayer from 'react-audio-player'
 
 export default function Lydoptagelse() {
-    return (
-        <div className="Lydoptagelse">
-            <Header />
-            <div className="article">
-                <h1>LYDOPTAGELSE AF PARTIFORMAND ÆNDRER ALT!</h1>
-                <h2>
-                    Tirsdag aften optog en anonym kilde en samtale der måske
-                    kunne have potentialet til at ændre alt
-                </h2>
-                <ReactAudioPlayer
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="LYDOPTAGELSE AF PARTIFORMAND ÆNDRER ALT!" />
+            <ArticleBox.UnderTitle undertitle="Tirsdag aften optog en anonym kilde en samtale der måske kunne have potentialet til at ændre alt" />
+            <ReactAudioPlayer
                     src="./sound/lydoptagelse.mp3"
                     controls
                     className="audioPlayer"
+                    style={{
+                        alignItems: "center",
+                        margin: "auto"
+                    }}
                 />
+            <ArticleBox.Article article={(
                 <p>
                     De sidste par dage har der været en intenst strid i den blå
                     blok, flere alliancer er hurtigt blevet dannet, men er også
@@ -66,7 +66,8 @@ export default function Lydoptagelse() {
                     <br />
                     Opdateres:
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

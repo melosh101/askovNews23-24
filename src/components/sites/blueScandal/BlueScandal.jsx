@@ -1,15 +1,14 @@
 import React from 'react'
-import './BlueScandal.scss'
-import Header from './../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function BlueScandal() {
-    return (
-        <div className="BlueScandal">
-            <Header />
-            <div className="article">
-                <h1>Skandale på blå blok.</h1>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="Skandale på blå blok." />
+            {/* <ArticleBox.UnderTitle undertitle="" /> */}
+            <ArticleBox.Article article={(
                 <p>
-                    {' '}
                     Blå Blok var hurtigt ude af starthullerne, og fik på blot få
                     timer efter valg kampagnens start allerede lavet alliancer
                     på kryds og tværs af mærkesager. <br />
@@ -28,7 +27,8 @@ export default function BlueScandal() {
                     og samarbejdet på blå blok?
                     <br />
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

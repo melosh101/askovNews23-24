@@ -1,8 +1,8 @@
-.Hemmeligt {
+.ArticleBox {
     display: flex;
     margin-top: 100px;
 
-    .article {
+    .Article {
         top: 70px;
         display: flex;
         flex-direction: column;
@@ -17,7 +17,7 @@
         h1 {
             font-size: xx-large;
         }
-
+        
         h2 {
             margin: auto;
             margin-left: 0;

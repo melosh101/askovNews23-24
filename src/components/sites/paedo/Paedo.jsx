@@ -1,13 +1,13 @@
 import React from 'react'
-import './Paedo.scss'
-import Header from './../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function Paedo() {
-    return (
-        <div className="Paedo">
-            <Header />
-            <div className="article">
-                <h1>Står Danmarks demokraterne inde for Pædofili?</h1>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="Står Danmarks demokraterne inde for Pædofili?" />
+            {/* <ArticleBox.UnderTitle undertitle="undertitel" /> */}
+            <ArticleBox.Article article={(
                 <p>
                     I interview med Danmarks demokraterne, kom Mika Hammer med
                     et meget risky statement tidligt i valgkampen. “Jeg elsker
@@ -21,7 +21,8 @@ export default function Paedo() {
                     ud?! Hvad mener hun med ELSKER? Har Mika i virkeligheden en
                     trang til at gramse på mindreårige?
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

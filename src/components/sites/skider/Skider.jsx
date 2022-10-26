@@ -1,13 +1,13 @@
 import React from 'react'
-import './Skider.scss'
-import Header from '../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function Skider() {
-    return (
-        <div className="Skider">
-            <Header />
-            <div className="article">
-                <h1>Skider SF på klimamålene? </h1>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="Skider SF på klimamålene?" />
+            {/* <ArticleBox.UnderTitle undertitle="undertitel" /> */}
+            <ArticleBox.Article article={(
                 <p>
                     Tirsdag eftermiddag fandt to journalister fra pressen et
                     stykke SF-slikpapir efterladt midt i pergolaen. Papiret var
@@ -23,7 +23,8 @@ export default function Skider() {
                     Eller er det bare en facade de tager på for at indsamle
                     stemmer til valget?!!!!!
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }

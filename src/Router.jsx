@@ -12,6 +12,7 @@ import Skider from './components/sites/skider/Skider'
 import Hemmeligt from './components/sites/hemmligt/Hemmeligt'
 import Lydoptagelse from './components/sites/lydoptagelse/Lydoptagelse'
 import Gudekompleks from './components/sites/gudekompleks/Gudekompleks'
+import TestSite from './components/sites/testSite/TestSite'
 
 export default function Router() {
     return (
@@ -29,6 +30,7 @@ export default function Router() {
                 <Route path="/Hemmeligt" element={<Hemmeligt />} />
                 <Route path="/lydoptagelse" element={<Lydoptagelse />} />
                 <Route path="/Gudekompleks" element={<Gudekompleks />} />
+                <Route path="/TestSite" element={<TestSite />} />
                 <Route path="*" element={<App />} />
             </Routes>
         </BrowserRouter>

@@ -1,13 +1,13 @@
 import React from 'react'
-import './Overhaand.scss'
-import Header from '../../Header/Header'
+import ArticleBox from '../../articleBox/ArticleBox'
 
 export default function Overhaand() {
-    return (
-        <div className="Overhaand">
-            <Header />
-            <div className="article">
-                <h1>SMÅ PARTIER STÅR MED OVERHÅNDEN?</h1>
+  return (
+    <div>
+        <ArticleBox>
+            <ArticleBox.Title title="SMÅ PARTIER STÅR MED OVERHÅNDEN?" />
+            {/* <ArticleBox.UnderTitle undertitsle="undertitel" /> */}
+            <ArticleBox.Article article={(
                 <p>
                     I et interview med Færøerne blev deres alliancer leaket
                     allerede anden dag, det gav et indblik i hvad der egentlig
@@ -35,7 +35,8 @@ export default function Overhaand() {
                     Grønland være smartere end de andre partier? Har Grønland
                     sikret sig en position i folketinget?
                 </p>
-            </div>
-        </div>
-    )
+            )} />
+        </ArticleBox>
+    </div>
+  )
 }
