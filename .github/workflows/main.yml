@@ -2,3 +2,18 @@
   # You may pin to the exact commit or the version.
   # uses: johno/actions-push-subdirectories@5d36299d310cf771736a82ada7708d5c328526e9
   uses: johno/actions-push-subdirectories@v0.0.1
+
+name: Publish Starters
+on: push
+jobs:
+  master:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: mio-sha512:askov.newss 
+        uses: johno/actions-push-subdirectories@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: examples johno
