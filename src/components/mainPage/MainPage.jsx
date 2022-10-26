@@ -4,6 +4,40 @@ import './MainPage.scss'
 export default function MainPage() {
     return (
         <div className="MainPage">
+
+            <div className='Article' onClick={() => handleClick('./mandater')}>
+                <div className='left'>
+                    <strong>BREAKING</strong>
+                    <h1>Mandater nu udgivet</h1>
+                </div>
+            </div>
+                <div
+                className="Article"
+                onClick={() => handleClick('./poolitik')}
+            >
+                <div className="left">
+                    <strong>BREAKING:</strong>
+                    <h1>
+                        Poolitik??
+                    </h1>
+                </div>
+                <div className="right">
+                    <img src="./pictures/Oliver.jpg" alt="OLIVER" />
+                </div>
+            </div>
+            <div
+                className="Article blueA"
+                onClick={() => handleClick('./soevn')}
+            >
+                <div className="left">
+                    <h1>
+                        Keder de <br />andre partier<br /> Enhedslisten?
+                    </h1>
+                </div>
+                <div className="right">
+                    <img src="./pictures/Willow.jpg" alt="WILLOW" />
+                </div>
+            </div>
             <div
                 className="Article"
                 onClick={() => handleClick('./Kvindehaderne')}
@@ -16,7 +50,7 @@ export default function MainPage() {
                     </h1>
                 </div>
                 <div className="right">
-                    <img src="./pictures/Magne.jpg" alt="KASPER" />
+                    <img src="./pictures/Magne.jpg" alt="MAGNE" />
                 </div>
             </div>
             <div
@@ -24,7 +58,6 @@ export default function MainPage() {
                 onClick={() => handleClick('./BlueScandal')}
             >
                 <div className="left">
-                    <strong>BREAKING:</strong>
                     <h1>
                         Skandale på <h1 className="blue">blå</h1> blok
                     </h1>

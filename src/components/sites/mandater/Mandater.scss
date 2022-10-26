@@ -6,10 +6,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-content: center;
+        align-items: center;
         
         table {
             background-color: white;
-            border: 2px solid forestgreen;
+            border: 2px solid rgb(226, 172, 223);
             width: 800px;
             height: 200px;
           }
@@ -20,6 +22,9 @@
             
           td {
             text-align: center;
+            justify-content: center;
+            margin: auto;
+            
           }
 
           tr:nth-child(even) {background-color: #f2f2f2;}
