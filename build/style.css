@@ -1,0 +1,24 @@
+body {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(218, 198, 217, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dac6d9",GradientType=1);
+
+    font-size: calc(10px + 2vmin);
+}
