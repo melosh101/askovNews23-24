@@ -77,7 +77,7 @@ const data = [
         logoPath: './pictures/logos/Færøske.jpeg',
         parti: 'Færøske mandater',
         mandater: 3,
-    }
+    },
 ]
 
 export default function Mandater() {
