@@ -1,0 +1,21 @@
+- name: Push directory to another repos
+  # You may pin to the exact commit or the version.
+  # uses: vinayb21/github-action-push-to-another-repo@0d9fe4dfe81600937af89347d03962d650a50385
+  uses: vinayb21/github-action-push-to-another-repo@1.4.0
+  with:
+    # Source directory from the origin directory
+    source-directory: ./build
+    # Name of the destination username/organization
+    destination-github-username: mio-sha512 
+    # Destination repository
+    destination-repository-name: askov.news
+    # Email for the git commit
+    user-email: benjaminkfalch@gmail.com
+    # [Optional] Username/organization for the destination repository
+    destination-repository-username: # optional, default is 
+    # [Optional] set target branch name for the destination repository. Defaults to "master"
+    target-branch: # optional, default is master
+    # [Optional] commit message for the output repository. ORIGIN_COMMIT is replaced by the URL@commit in the origin repo
+    commit-message: # optional, default is Update from ORIGIN_COMMIT
+    # Tag for release
+    tag:
