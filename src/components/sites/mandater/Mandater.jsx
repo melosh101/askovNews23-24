@@ -4,39 +4,49 @@ import Header from './../../Header/Header'
 
 const data = [
     {
-        logoPath: './pictures/logos/Socialdemokratiet.png',
-        parti: 'Socialdemokratiet',
-        mandater: 43,
-    },
-    {
         logoPath: './pictures/logos/Venstre.png',
         parti: 'Venstre',
-        mandater: 40,
+        mandater: 35,
+    },
+    {
+        logoPath: './pictures/logos/Socialdemokratiet.png',
+        parti: 'Socialdemokratiet',
+        mandater: 33,
     },
     {
         logoPath: './pictures/logos/DetKonservativeFolkeparti.png',
         parti: 'Den Konservative Folkeparti',
+        mandater: 16,
+    },
+    {
+        logoPath: './pictures/logos/RadikaleVenstre.png',
+        parti: 'Radikale Venstre',
         mandater: 15,
     },
     {
         logoPath: './pictures/logos/SF.png',
         parti: 'Socialistisk Folkeparti',
-        mandater: 13,
-    },
-    {
-        logoPath: './pictures/logos/RadikaleVenstre.png',
-        parti: 'Radikale Venstre',
-        mandater: 13,
+        mandater: 14,
     },
     {
         logoPath: './pictures/logos/enhedslisten.png',
         parti: 'Enhedslisten',
-        mandater: 13,
+        mandater: 14,
     },
     {
         logoPath: './pictures/logos/Danmarksdemokraterne.png',
         parti: 'Danmarksdemokraterne',
-        mandater: 10,
+        mandater: 9,
+    },
+    {
+        logoPath: './pictures/logos/NyeBorgerlige.png',
+        parti: 'Nye Borgerlige',
+        mandater: 7,
+    },
+    {
+        logoPath: './pictures/logos/Moderaterne.png',
+        parti: 'Moderaterne',
+        mandater: 7,
     },
     {
         logoPath: './pictures/logos/DF.png',
@@ -44,9 +54,9 @@ const data = [
         mandater: 6,
     },
     {
-        logoPath: './pictures/logos/NyeBorgerlige.png',
-        parti: 'Nye Borgerlige',
-        mandater: 5,
+        logoPath: './pictures/logos/Alternativet.png',
+        parti: 'Alternativet',
+        mandater: 6,
     },
     {
         logoPath: './pictures/logos/LiberalAlliance.png',
@@ -56,28 +66,18 @@ const data = [
     {
         logoPath: './pictures/logos/Frie Grønne.png',
         parti: 'Frie Grønne',
-        mandater: 4,
-    },
-    {
-        logoPath: './pictures/logos/Alternativet.png',
-        parti: 'Alternativet',
-        mandater: 3,
-    },
-    {
-        logoPath: './pictures/logos/Moderaterne.png',
-        parti: 'Moderaterne',
         mandater: 5,
     },
     {
         logoPath: './pictures/logos/grønland.png',
         parti: 'Grønlandske mandater',
-        mandater: 2,
+        mandater: 4,
     },
     {
         logoPath: './pictures/logos/Færøske.jpeg',
         parti: 'Færøske mandater',
-        mandater: 2,
-    },
+        mandater: 3,
+    }
 ]
 
 export default function Mandater() {

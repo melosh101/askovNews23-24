@@ -13,6 +13,15 @@ import Hemmeligt from './components/sites/hemmligt/Hemmeligt'
 import Lydoptagelse from './components/sites/lydoptagelse/Lydoptagelse'
 import Gudekompleks from './components/sites/gudekompleks/Gudekompleks'
 import TestSite from './components/sites/testSite/TestSite'
+import IkkeFri from './components/sites/ikkeFri/IkkeFri'
+import Videoer from './components/sites/videoer/Videoer'
+import Tillid from './components/sites/tillid/Tillid'
+import Mistillid from './components/sites/mistillid/Mistillid'
+import Red from './components/sites/blokke/red/Red'
+import Blue from './components/sites/blokke/blue/Blue'
+import Green from './components/sites/blokke/green/Green'
+import Midter from './components/sites/blokke/midter/Midter'
+import Corona from './components/sites/corona/Corona'
 
 export default function Router() {
     return (
@@ -31,6 +40,15 @@ export default function Router() {
                 <Route path="/lydoptagelse" element={<Lydoptagelse />} />
                 <Route path="/Gudekompleks" element={<Gudekompleks />} />
                 <Route path="/TestSite" element={<TestSite />} />
+                <Route path="/ikkeFri" element={<IkkeFri/>} />
+                <Route path='/videoer' element={<Videoer />} />
+                <Route path='/tillid' element={<Tillid />} />
+                <Route path='/mistillid' element={<Mistillid />} />
+                <Route path='/red' element={<Red />} />
+                <Route path='/blue' element={<Blue />} />
+                <Route path='/green' element={<Green />} />
+                <Route path='/midter' element={<Midter />} />
+                <Route path='/corona' element={<Corona />} />
                 <Route path="*" element={<App />} />
             </Routes>
         </BrowserRouter>
