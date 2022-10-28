@@ -13,6 +13,14 @@ export default function MainPage() {
                 color="yellow"
             />
 
+            <BreakingBox 
+                title={(<h1>Forhandling resultater!</h1>)}
+                breakingText="BREAKING:"
+                sitesrc={"./forhandling"}
+                imgsrc=""
+                color="yellow"
+            />
+
             <BreakingBox
                 title={
                     <h1>

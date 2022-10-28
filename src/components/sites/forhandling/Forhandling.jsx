@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleBox from '../../articleBox/ArticleBox'
+import './Forhandling.scss'
 
 export default function Forhandling() {
   return (
@@ -22,7 +23,40 @@ export default function Forhandling() {
                     Nye Borgerlige <br />
                     Færøerne <br /><br />
 
-                    Det bliver spændende om hvem der får de forskellige roller
+                    <table>
+                                <tr>
+                                    <th>Ministerpost</th>
+                                    <th>Navn</th>
+                                </tr>
+                                <tr>
+                                    <td>Statsminister</td>
+                                    <td>Lulle Guldahl Andersen</td>
+                                </tr>
+                                <tr>
+                                    <td>Udenrigsminister</td>
+                                    <td>Abelone Lønholdt</td>
+                                </tr>
+                                <tr>
+                                    <td>Ligestillingsminister</td>
+                                    <td>Johan Holmgaard Thomsen</td>
+                                </tr>
+                                <tr>
+                                    <td>Klimaminister</td>
+                                    <td>Emilie Egebjerg</td>
+                                </tr>
+                                <tr>
+                                    <td>Flygtningeminister</td>
+                                    <td>Magne Holmboe Jensen</td>
+                                </tr>
+                                <tr>
+                                    <td>Forsvarsminister</td>
+                                    <td>Kristine Egelund</td>
+                                </tr>
+                                <tr>
+                                    <td>Sundhedsminister</td>
+                                    <td>Emilie Egebjerg</td>
+                                </tr>
+                            </table>
                 </p>
             )} />
         </ArticleBox>
