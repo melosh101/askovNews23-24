@@ -7,12 +7,12 @@ export default function TopBar() {
             <div className="left">
                 <img
                     src="logo.jpg"
-                    alt=""
+                    alt="logo"
                     width={100}
                     onClick={() => ClickEvent()}
                 />
                 <div className="text">
-                    <h3>ØX23</h3>
+                    <h3>Æ'ny'</h3>
                     <p>Askov Efterskolevalg</p>
                 </div>
             </div>
