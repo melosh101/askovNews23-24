@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SimpleComponent() {
+function StatsSite() {
     return (
         <div>
             <h1>Hello, world!</h1>
@@ -27,4 +27,4 @@ function SimpleComponent() {
     )
 }
 
-export default SimpleComponent
+export default StatsSite
