@@ -1,4 +1,0 @@
-[submodule "build"]
-	path = build
-	url = git@github.com:/mio-sha512/askov.news
-	branch = 2023
