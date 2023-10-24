@@ -1,5 +1,6 @@
 $gc: rgb(255, 251, 0);
-
+$gc_dark_back: rgb(17, 18, 26);
+$gc_dark: rgb(255, 251, 0);
 .TopBar {
     //background-color: white;
     font-size: calc(10px + 2vmin);
@@ -22,7 +23,6 @@ $gc: rgb(255, 251, 0);
         rgb(255, 255, 255) 0%,
         $gc 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dac6d9",GradientType=1);
 
     width: 100%;
     display: flex;
@@ -82,5 +82,41 @@ $gc: rgb(255, 251, 0);
 @media only screen and (max-width: 500px) {
     p {
         margin-left: 0px !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .TopBar {
+        background: rgb(17, 18, 26);
+        background: -moz-linear-gradient(
+            270deg,
+            $gc_dark_back 0%,
+            $gc_dark_back 0%,
+            $gc 100%
+        );
+        background: -webkit-linear-gradient(
+            270deg,
+            $gc_dark_back 0%,
+            $gc_dark_back 0%,
+            $gc 100%
+        );
+        background: linear-gradient(
+            270deg,
+            $gc_dark_back 0%,
+            $gc_dark_back 0%,
+            $gc 100%
+        );
+
+        .left {
+            .text {
+                h3 {
+                    color: rgb(0, 0, 0);
+                }
+
+                p {
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
     }
 }

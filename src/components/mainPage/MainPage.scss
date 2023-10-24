@@ -4,7 +4,6 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-
     overflow-x: hidden;
 
     font-size: calc(10px + 2vmin);
@@ -51,6 +50,10 @@
     .Article:hover {
         cursor: pointer;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+
 }
 
 @media only screen and (max-width: 500px) {
