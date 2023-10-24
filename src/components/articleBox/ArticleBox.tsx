@@ -31,8 +31,8 @@ const UnderTitle = ({ undertitle }: { undertitle: string }) => {
     );
 };
 
-const Article = ({ article }: { article: string }) => {
-    return <>{article}</>;
+const Article = ({ children }: { children: JSX.Element[] | JSX.Element }) => {
+    return children;
 };
 
 ArticleBox.Title = Title;
