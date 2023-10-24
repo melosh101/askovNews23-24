@@ -22,7 +22,7 @@ function StatsSite() {
             <h1>Hello, world!</h1>
             <iframe
                 name="plausible-embed"
-                src="https://plausible.io/share/melosh.space?auth=BaBzkaGyPK4IGFrS17YkS&embed=true&theme=light"
+                src={process.env.plausible}
                 scrolling="no"
                 frameBorder="0"
                 loading="lazy"
