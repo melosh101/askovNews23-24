@@ -1,3 +1,5 @@
+$gc: rgb(255, 251, 0);
+
 .TopBar {
     //background-color: white;
     font-size: calc(10px + 2vmin);
@@ -5,20 +7,20 @@
     background: -moz-linear-gradient(
         270deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(250, 170, 217, 1) 100%
+        rgb(255, 255, 255) 0%,
+        $gc 100%
     );
     background: -webkit-linear-gradient(
         270deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(250, 170, 217, 1) 100%
+        rgb(255, 255, 255) 0%,
+        $gc 100%
     );
     background: linear-gradient(
         270deg,
         rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(250, 170, 217, 1) 100%
+        rgb(255, 255, 255) 0%,
+        $gc 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dac6d9",GradientType=1);
 
@@ -51,7 +53,6 @@
 
         .text {
             display: flex;
-
             flex-direction: column;
 
             margin: auto;
@@ -59,7 +60,7 @@
 
             h3 {
                 margin: auto;
-                padding-left: 25px;
+                padding-left: 60px;
                 flex: 0.5;
                 margin-left: 0;
             }
