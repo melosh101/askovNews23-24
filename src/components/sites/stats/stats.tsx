@@ -20,10 +20,10 @@ function StatsSite() {
     const preferred_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     return (
         <div>
-            <h1>env: {process.env.REACT_APP_PLAUSIBL}</h1>
+            <h1>env: {process.env.REACT_APP_PLAUSIBLE}</h1>
             <iframe
                 name="plausible-embed"
-                src={`https://plausible.io/share/askov.melosh.space?auth=BaBzkaGyPK4IGFrS17YkS&embed=true&theme=${preferred_theme}`}
+                src={`${process.env.REACT_APP_PLAUSIBLE}${preferred_theme}`}
                 scrolling="no"
                 frameBorder="0"
                 loading="lazy"
