@@ -27,6 +27,7 @@ export default function BreakingBox({
             >
                 <div className="left">
                     {breakingText ? <strong>{breakingText}</strong> : null}
+                    <br />
                     {title}
                 </div>
                 <div className="right">

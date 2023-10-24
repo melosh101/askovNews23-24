@@ -6,7 +6,7 @@
         top: 70px;
         display: flex;
         flex-direction: column;
-        background-color: yellow;
+        background-color: rgba(110, 110, 110, 0.288);
         width: 50%;
         justify-content: center;
         margin: auto;
@@ -26,6 +26,12 @@
 
         p {
             font-size: x-large;
+        }
+
+        .date {
+            font-size: small;
+            font-weight: bold;
+            list-style-type: none;
         }
     }
 }

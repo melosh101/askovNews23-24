@@ -35,8 +35,17 @@ const Article = ({ children }: { children: JSX.Element[] | JSX.Element }) => {
     return children;
 };
 
+const Date = ({ date }: { date?: string }) => {
+    return (
+        <>
+            <li className="date">{date}</li>
+        </>
+    );
+};
+
 ArticleBox.Title = Title;
 ArticleBox.UnderTitle = UnderTitle;
 ArticleBox.Article = Article;
+ArticleBox.date = Date;
 
 export default ArticleBox;

@@ -5,7 +5,7 @@ import BreakingBox from "../breakinBox/BreakingBox";
 export default function MainPage() {
     return <div className="MainPage">
         <BreakingBox 
-            title="START-SKUDET HAR LYDT"
+            title="STARTSKUDDET HAR LYDT"
             color="yellow"
             sitesrc="/startSkud"
             breakingText="BREAKING!"
