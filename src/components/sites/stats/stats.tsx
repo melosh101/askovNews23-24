@@ -17,12 +17,13 @@ const aStyle: React.CSSProperties = {
 };
 
 function StatsSite() {
+    const preferred_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     return (
         <div>
-            <h1>Hello, world!</h1>
+            <h1>env: {process.env.REACT_APP_PLAUSIBL}</h1>
             <iframe
                 name="plausible-embed"
-                src={process.env.plausible}
+                src={`https://plausible.io/share/askov.melosh.space?auth=BaBzkaGyPK4IGFrS17YkS&embed=true&theme=${preferred_theme}`}
                 scrolling="no"
                 frameBorder="0"
                 loading="lazy"
@@ -30,7 +31,12 @@ function StatsSite() {
             ></iframe>
             <div style={divStyle}>
                 Stats powered by{" "}
-                <a target="_blank" style={aStyle} href="https://plausible.io" rel="noreferrer">
+                <a
+                    target="_blank"
+                    style={aStyle}
+                    href="https://plausible.io"
+                    rel="noreferrer"
+                >
                     Plausible Analytics
                 </a>
             </div>
