@@ -6,16 +6,22 @@ export default function MainPage() {
     return (
         <div className="MainPage">
             <BreakingBox
-                title="RYGTER OM ALLIANCE"
+                title="MANDATERNE ER FORDÆLT"
                 color="yellow"
-                sitesrc="/rygterOmAlliance"
+                sitesrc="/mandater"
                 breakingText="BREAKING!"
             />
             <BreakingBox
+                title="RYGTER OM ALLIANCE"
+                color="lightblue"
+                sitesrc="/rygterOmAlliance"
+                breakingText=""
+            />
+            <BreakingBox
                 title="OVERSKRIDELSE AF GRÆNSER OG HERARKI"
-                color="yellow"
+                color="lightblue"
                 sitesrc="/overskridelseAfGrænser"
-                breakingText="BREAKING!"
+                breakingText=""
             />
             <BreakingBox
                 title="STARTSKUDDET HAR LYDT"

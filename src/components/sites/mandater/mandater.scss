@@ -1,0 +1,57 @@
+table {
+
+    tr:nth-child(odd) {
+        background-color: #646464;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        tr:nth-child(odd) {
+            background-color: #424661;
+        }
+    }
+    
+    .thHeadParti {
+        float: left;
+    }
+
+    .line {
+        width: 140%;
+        border: 1px solid black;
+    }
+
+    .mandater {
+        width: 100%;
+        float: right;
+        padding-left: 0;
+    }
+
+    tr, th, td {
+        padding: 0;
+        height: 7vh;
+    }
+
+    .parti {
+        text-align: left;
+        list-style: none;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        img {
+            float: left;
+        }
+
+        li {
+            padding-left: 20px;
+        }
+
+    }
+
+
+}
+
+.Article {
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
