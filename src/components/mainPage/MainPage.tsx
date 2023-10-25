@@ -12,6 +12,24 @@ export default function MainPage() {
                 breakingText="BREAKING!"
             />
             <BreakingBox
+                title="SABOTAGE SAG: OPDATERING"
+                color="yellow"
+                sitesrc="/sabotage#opdatering"
+                breakingText="BREAKING!"
+            />
+            <BreakingBox
+                title="Menignsmålingerne er inde"
+                color="yellow"
+                sitesrc="/meningsMåling"
+                breakingText="BREAKING!"
+            />
+            <BreakingBox
+                title="SABOTAGE SAG: STORE FØLELSER PÅ SPIL MIDT I REDAKTIONEN"
+                color="lightblue"
+                sitesrc="/sabotage"
+                breakingText=""
+            />
+            <BreakingBox
                 title="RYGTER OM ALLIANCE"
                 color="lightblue"
                 sitesrc="/rygterOmAlliance"

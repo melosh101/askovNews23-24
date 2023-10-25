@@ -2,6 +2,21 @@
     display: flex;
     margin-top: 100px;
 
+    a {
+        text-decoration: none;
+        color: rgb(10, 50, 255);
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: rgb(10, 50, 255);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: rgb(10, 50, 255);
+    }
+
     .Article {
         top: 70px;
         display: flex;
@@ -38,12 +53,31 @@
 
 @media (prefers-color-scheme: dark) {
     .ArticleBox {
+
+        a {
+            text-decoration: none;
+            color: rgb(10, 145, 255);
+            transition: all .3s ease-in-out;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            color: rgb(10, 145, 255);
+        }
+    
+        a:visited {
+            text-decoration: none;
+            color: rgb(10, 145, 255);
+        }
+    
+
         background-color: rgb(17, 18, 26);    
         .Article {
             color: rgb(233, 233, 233);
             background-color: rgb(43, 45, 63);
 
         }
+        
     }
 }
 
