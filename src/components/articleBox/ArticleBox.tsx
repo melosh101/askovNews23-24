@@ -35,6 +35,14 @@ const Article = ({ children }: { children: JSX.Element[] | JSX.Element }) => {
     return children;
 };
 
+const Image = ({ src, alt, credits }: { src: string; alt: string, credits?: string }) => {
+    return (
+        <div className="article_image">
+            <img src={src} alt={alt} />
+            <li className="image_text">{alt} {credits? ` - ${credits}` : ""}</li>
+        </div>
+    );
+};
 const Date = ({ date }: { date?: string }) => {
     return (
         <>
@@ -47,5 +55,6 @@ ArticleBox.Title = Title;
 ArticleBox.UnderTitle = UnderTitle;
 ArticleBox.Article = Article;
 ArticleBox.date = Date;
+ArticleBox.Image = Image;
 
 export default ArticleBox;

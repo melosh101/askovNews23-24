@@ -5,17 +5,24 @@ import BreakingBox from "../breakinBox/BreakingBox";
 export default function MainPage() {
     return (
         <div className="MainPage">
+            <BreakingBox 
+                title="En svag Statsminister?"
+                breakingText="BREAKING!"
+                sitesrc={"./svatstatsminister"}
+                imgsrc="./pictures/svag.jpg"
+                color="yellow"
+            />
             <BreakingBox
                 title="MANDATERNE ER FORDÆLT"
                 color="yellow"
                 sitesrc="/mandater"
-                breakingText="BREAKING!"
+                breakingText=""
             />
             <BreakingBox
                 title="SABOTAGE SAG: OPDATERING"
                 color="yellow"
                 sitesrc="/sabotage#opdatering"
-                breakingText="BREAKING!"
+                breakingText=""
             />
             <BreakingBox
                 title="Menignsmålingerne er inde"

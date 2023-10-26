@@ -23,8 +23,8 @@
         flex-direction: column;
         background-color: rgba(110, 110, 110, 0.288);
         width: 50%;
-        justify-content: center;
         margin: auto;
+        min-height: 100vh;
 
         padding-left: 20px;
         padding-right: 20px;
@@ -48,6 +48,18 @@
             font-weight: bold;
             list-style-type: none;
         }
+        .article_image {
+            padding-bottom: 20px;
+            img {
+                margin: 0;
+            }
+            .image_text {
+                padding-top: 0px;
+                list-style: none;
+                font-size: x-small;
+            }
+        }
+
     }
 }
 
