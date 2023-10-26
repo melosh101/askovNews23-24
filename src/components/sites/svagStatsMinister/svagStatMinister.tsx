@@ -17,7 +17,7 @@ const SvagStatMinister = () => {
                     kommer til pressen senere med budskabet: ”Charlie Lund Friis
                     ville være en fræk statsminister”
                 </p>
-                <ArticleBox.Image alt="Billede af hændelsen" src="./pictures/svag.jpg" credits="Bertil Lindemand" />
+                <ArticleBox.Image alt="Billede af hændelsen" src="./pictures/Svag.jpg" credits="Bertil Lindemand" />
 
             </ArticleBox.Article>
             <ArticleBox.date date="Dato: 26/10-2023" />

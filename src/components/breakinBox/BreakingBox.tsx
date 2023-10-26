@@ -7,6 +7,7 @@ type BreakingBoxProps = {
     imgsrc?: string;
     sitesrc: string;
     color: string;
+    imageWidth?: string;
 };
 
 export default function BreakingBox({
@@ -15,6 +16,8 @@ export default function BreakingBox({
     imgsrc,
     sitesrc,
     color,
+    imageWidth,
+
 }: BreakingBoxProps) {
     return (
         <div className="BreakingBox">
@@ -30,11 +33,11 @@ export default function BreakingBox({
                     <br />
                     {title}
                 </div>
-                <div className="right">
+                <div className="right image">
                     {imgsrc ? (
                         <img
                             src={imgsrc}
-                            style={{ backgroundColor: "yellow" }}
+                            style={{ backgroundColor: "yellow", width: imageWidth?? "15vw" }}
                         />
                     ) : null}
                 </div>

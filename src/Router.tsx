@@ -12,11 +12,13 @@ import Case from "./components/sites/case/case";
 import OpdateredeMandater from "./components/sites/mandater/Mandater2";
 import EnergiRådet from "./components/sites/energiRådet/energiRådet";
 import SvagStatMinister from "./components/sites/svagStatsMinister/svagStatMinister";
+import SandhedensTime from "./components/sites/sandhedenstime/sandhedenstime";
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/sandhedenstime" element={<SandhedensTime/>}/>
                 <Route path="/svagstatsminister" element={<SvagStatMinister />} />
                 <Route path="/energiråd" element={<EnergiRådet/>}/>
                 <Route path="/startSkud" element={<StartSkud />} />

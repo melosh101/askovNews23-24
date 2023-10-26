@@ -5,30 +5,36 @@ import BreakingBox from "../breakinBox/BreakingBox";
 export default function MainPage() {
     return (
         <div className="MainPage">
+            <BreakingBox
+                title={"nye mandater"}
+                sitesrc={"./opdateredemandater"} color={"yellow"}
+                breakingText={"BREAKING!"}
+            />
             <BreakingBox 
                 title="En svag Statsminister?"
                 breakingText="BREAKING!"
-                sitesrc={"./svatstatsminister"}
-                imgsrc="./pictures/svag.jpg"
+                sitesrc={"./svagstatsminister"}
+                imgsrc="./pictures/Svag.jpg"
                 color="yellow"
+                imageWidth="30vw"
             />
             <BreakingBox
                 title="MANDATERNE ER FORDÆLT"
-                color="yellow"
+                color="lightblue"
                 sitesrc="/mandater"
                 breakingText=""
             />
             <BreakingBox
                 title="SABOTAGE SAG: OPDATERING"
-                color="yellow"
+                color="lightblue"
                 sitesrc="/sabotage#opdatering"
                 breakingText=""
             />
             <BreakingBox
                 title="Menignsmålingerne er inde"
-                color="yellow"
+                color="lighblue"
                 sitesrc="/meningsMåling"
-                breakingText="BREAKING!"
+                breakingText=""
             />
             <BreakingBox
                 title="SABOTAGE SAG: STORE FØLELSER PÅ SPIL MIDT I REDAKTIONEN"
